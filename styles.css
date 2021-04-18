@@ -1,16 +1,35 @@
-h1 {
-
-	color: rgb(67, 128, 168);
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+    justify-content: center;
 }
 
-a:link {
-    color: pink;
+.flex-container > div {
+    background-color: dodgerblue;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-a:visited {
-    color: green;
-}
-
-a:hover {
-    text-decoration: underline overline wavy blue;
-}
+a {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    background-color: dodgerblue;
+  }
+  
+  a:visited {
+    background-color: dodgerblue;
+  }
