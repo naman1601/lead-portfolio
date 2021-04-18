@@ -3,6 +3,7 @@
     flex-flow: row wrap;
     background-color: DodgerBlue;
     justify-content: center;
+    /* position: fixed; */
 }
 
 .flex-container > div {
@@ -20,16 +21,29 @@ a {
     padding: 1em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
-  }
+}
   
-  a:hover {
-    color: red;
-  }
+a:hover {
+    background-color: red;
+    color: rgb(59, 201, 201);
+}
   
-  a:active {
+a:active {
     background-color: dodgerblue;
-  }
+}
   
-  a:visited {
+a:visited {
     background-color: dodgerblue;
-  }
+}
+
+#skills {
+
+    height: 100vh;
+    background-color: hotpink;
+}
+
+#interests {
+
+    height: 100vh;
+    background-color: indigo;
+}
