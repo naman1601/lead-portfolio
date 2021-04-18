@@ -1,0 +1,16 @@
+h1 {
+
+	color: rgb(67, 128, 168);
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline overline wavy blue;
+}
