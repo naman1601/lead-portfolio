@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
