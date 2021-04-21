@@ -97,6 +97,30 @@ a:visited {
     align-items: center;
 }
 
+#cf-container {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cf-stats {
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cf-attribute {
+
+    font-size: 2.5rem;
+    /* color: darkblue; */
+}
+
 #heading {
 
     font-size: 2.8rem;
@@ -132,17 +156,29 @@ a:visited {
     background-color: rgb(198, 235, 235);
 }
 
+#cf {
+
+    height: 100vh;
+    background-color: rgb(198, 235, 235);
+}
+
 .content {
 
     font-size: 1.4rem;
+    /* height: 100%; */
     width: 80%;
     color: darkblue;
     text-align: center;
 }
 
+.name-of-stat {
+
+    color: darkblue;
+}
+
 #interests-container > .content {
 
-    height: 60vh;
+    height: 40vh;
 }
 
 #backToTop {
