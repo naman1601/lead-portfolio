@@ -37,7 +37,7 @@ function getCodeforcesData() {
 		// cfCurrentRating.innerText = "Current Rating: " + data.result[0].rating + " (" + data.result[0].rank + ")";
 		cfCurrentRating.innerHTML = "<span class=\"name-of-stat\">Current Rating: </span><span class=\"current-stats\">" + data.result[0].rating + " (" + data.result[0].rank + ")" + "</span>";
 		// cfMaxRating.innerText = "Max Rating: " + data.result[0].maxRating + " (" + data.result[0].maxRank + ")";
-		cfMaxRating.innerHTML = "<span class=\"name-of-stat\">Current Rating: </span><span class=\"max-stats\">" + data.result[0].maxRating + " (" + data.result[0].maxRank + ")" + "</span>";
+		cfMaxRating.innerHTML = "<span class=\"name-of-stat\">Max Rating: </span><span class=\"max-stats\">" + data.result[0].maxRating + " (" + data.result[0].maxRank + ")" + "</span>";
 
 		var curClass = document.getElementsByClassName("current-stats");
 		var maxClass = document.getElementsByClassName("max-stats");
