@@ -61,6 +61,14 @@ a:hover {
     text-transform: none;
 }
 
+.current-handle > a:hover {
+
+    border-bottom: 1.601px solid darkblue;
+    transform-origin: left;
+    transform: scale(1);
+    transition: all 0.05s linear;
+}
+
 #skills-container {
 
     height: 100vh;
