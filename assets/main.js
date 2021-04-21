@@ -32,13 +32,15 @@ function getCodeforcesData() {
 		var cfRankCur = data.result[0].rank;
 		var cfRankMax = data.result[0].maxRank;
 
-		cfHandle.innerHTML = "<span class=\"name-of-stat\">Handle: </span><span class=\"current-stats\">" + data.result[0].handle + "</span>";
+		cfHandle.innerHTML = "<span class=\"name-of-stat\">Handle: </span><span class=\"current-handle\"><a href=\"https://codeforces.com/profile/naman1601\" target=\"_blank\" title=\"visit my codeforces profile\">" + data.result[0].handle + "</a></span>";
 		// cfHandle.innerText = "Handle: " + data.result[0].handle;
 		// cfCurrentRating.innerText = "Current Rating: " + data.result[0].rating + " (" + data.result[0].rank + ")";
 		cfCurrentRating.innerHTML = "<span class=\"name-of-stat\">Current Rating: </span><span class=\"current-stats\">" + data.result[0].rating + " (" + data.result[0].rank + ")" + "</span>";
 		// cfMaxRating.innerText = "Max Rating: " + data.result[0].maxRating + " (" + data.result[0].maxRank + ")";
 		cfMaxRating.innerHTML = "<span class=\"name-of-stat\">Max Rating: </span><span class=\"max-stats\">" + data.result[0].maxRating + " (" + data.result[0].maxRank + ")" + "</span>";
 
+		var handleClass = document.getElementsByClassName("current-handle")[0];
+		var handleLink = handleClass.getElementsByTagName("a")[0];
 		var curClass = document.getElementsByClassName("current-stats");
 		var maxClass = document.getElementsByClassName("max-stats");
 
@@ -46,52 +48,62 @@ function getCodeforcesData() {
 
 			if(cfRankCur == "newbie") {
 
+				handleLink.style.color = "grey";
 				curClass[i].style.color = "grey";
 			}
 
 			if(cfRankCur == "pupil") {
 
+				handleLink.style.color = "green";
 				curClass[i].style.color = "green";
 			}
 
 			if(cfRankCur == "specialist") {
 
+				handleLink.style.color = "darkcyan";
 				curClass[i].style.color = "darkcyan";
 			}
 
 			if(cfRankCur == "expert") {
 
+				handleLink.style.color = "#3c6ffe";
 				curClass[i].style.color = "#3c6ffe";
 
 			}
 
 			if(cfRankCur == "candidate master") {
 
+				handleLink.style.color = "purple";
 				curClass[i].style.color = "purple";
 			}
 
 			if(cfRankCur == "master") {
 
+				handleLink.style.color = "orange";
 				curClass[i].style.color = "orange";
 			}
 
 			if(cfRankCur == "international master") {
 
+				handleLink.style.color = "orange";
 				curClass[i].style.color = "orange";
 			}
 
 			if(cfRankCur == "grandmaster") {
 
+				handleLink.style.color = "red";
 				curClass[i].style.color = "red";
 			}
 
 			if(cfRankCur == "international grandmaster") {
 
+				handleLink.style.color = "red";
 				curClass[i].style.color = "red";
 			}
 
 			if(cfRankCur == "legendary grandmaster") {
 
+				handleLink.style.color = "rgb(150, 0, 0)";
 				curClass[i].style.color = "rgb(150, 0, 0)";
 			}
 		}

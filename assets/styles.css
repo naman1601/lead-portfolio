@@ -53,13 +53,12 @@ a:hover {
     /* color: rgb(59, 201, 201); */
     color: rgb(198, 235, 235);
 }
-  
-a:active {
-    /* background-color: darkblue; */
-}
-  
-a:visited {
-    /* background-color: darkblue; */
+
+.current-handle > a{
+
+    /* color: darkcyan; */
+    padding: 0px;
+    text-transform: none;
 }
 
 #skills-container {
@@ -121,7 +120,7 @@ a:visited {
     /* color: darkblue; */
 }
 
-#heading {
+.heading {
 
     font-size: 2.8rem;
     color: darkblue;
