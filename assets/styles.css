@@ -14,6 +14,8 @@ html {
     padding: 0;
 }
 
+/* nav bar */
+
 .flex-container {
 
     display: flex;
@@ -23,13 +25,11 @@ html {
     top: 0;
     height: 13vh;
     width: 100%;
-    /* position: fixed; */
 }
 
 .flex-container > div {
 
     background-color: var(--dark_color);
-    /* width: 100px; */
     margin: 10px;
     text-align: center;
     line-height: 75px;
@@ -47,7 +47,7 @@ html {
 }
 
 a {
-    /* background-color: darkblue; */
+
     color: white;
     padding: 1em 1.5em;
     text-decoration: none;
@@ -55,40 +55,67 @@ a {
 }
   
 a:hover {
-    /* background-color: red; */
-    /* color: rgb(59, 201, 201); */
-    /* color: rgb(198, 235, 235); */
+
     color: var(--light_color);
 }
 
-.current-handle > a{
+/* some general rules that all sections will follow */
 
-    /* color: darkcyan; */
-    padding: 0px;
-    text-transform: none;
-}
+.heading {
 
-.current-handle > a:hover {
-
-    border-bottom: 1.601px solid var(--dark_color);
-    transform-origin: left;
-    transform: scale(1);
-    transition: all 0.05s linear;
-}
-
-.project-link > a{
-
+    font-size: 2.8rem;
     color: var(--dark_color);
-    padding: 0px;
-    text-transform: none;
+    text-align: left;
+    width: 90%;
+    border-bottom: 5px solid var(--dark_color);
 }
 
-.project-link > a:hover {
+.content {
 
-    border-bottom: 1.601px solid var(--dark_color);
-    transform-origin: left;
-    transform: scale(1);
-    transition: all 0.05s linear;
+    font-size: 1.4rem;
+    width: 80%;
+    color: var(--dark_color);
+}
+
+/* about section starts here */
+
+#about {
+
+    height: 100vh;
+    background-color: var(--light_color);
+}
+
+#about-container {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#about-container > .content {
+
+    height: 56vh;
+}
+
+.profile-links {
+
+    text-align: center;
+    margin-top: 60px;
+}
+
+a > img {
+
+    width: 50px;
+}
+
+/* skills section starts here */
+
+#skills {
+
+    height: 100vh;
+    background-color: var(--light_color);
 }
 
 #skills-container {
@@ -110,20 +137,32 @@ a:hover {
     width: 80vw;
 }
 
+.tile {
+
+    height: 40vh;
+    width: 22vw;
+    border-radius: 20px;
+}
+
+.tile > img {
+
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
 .tile:hover {
 
     transform: scale(1.01);
-    /* filter: brightness(1.05); */
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
 }
 
-#about-container {
+/* projects section starts here */
+
+#projects {
 
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    background-color: var(--light_color);
 }
 
 #projects-container {
@@ -133,6 +172,40 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.project-link > a {
+
+    color: var(--dark_color);
+    padding: 0px;
+    text-transform: none;
+}
+
+.project-link > a:hover {
+
+    border-bottom: 1.601px solid var(--dark_color);
+    transform-origin: left;
+    transform: scale(1);
+    transition: all 0.05s linear;
+}
+
+.project-summary {
+
+    font-size: 1.4rem;
+    color: var(--dark_color);
+}
+
+hr.separator {
+
+    border: 0.5px solid var(--dark_color);
+}
+
+/* codeforces section starts here */
+
+#cf {
+
+    height: 100vh;
+    background-color: var(--light_color);
 }
 
 #cf-container {
@@ -156,63 +229,6 @@ a:hover {
 .cf-attribute {
 
     font-size: 2.5rem;
-    /* color: darkblue; */
-}
-
-.heading {
-
-    font-size: 2.8rem;
-    color: var(--dark_color);
-    text-align: left;
-    width: 90%;
-    border-bottom: 5px solid var(--dark_color);
-}
-
-.tile {
-
-    height: 40vh;
-    width: 22vw;
-    border-radius: 20px;
-}
-
-.tile > img {
-
-    border-radius: 20px;
-    height: 100%;
-    width: 100%;
-}
-
-#skills {
-
-    height: 100vh;
-    background-color: var(--light_color);
-}
-
-#about {
-
-    height: 100vh;
-    background-color: var(--light_color);
-}
-
-#projects {
-
-    height: 100vh;
-    background-color: var(--light_color);
-}
-
-#cf {
-
-    height: 100vh;
-    background-color: var(--light_color);
-}
-
-.content {
-
-    font-size: 1.4rem;
-    /* height: 100vh; */
-    width: 80%;
-    color: var(--dark_color);
-    /* text-align: center; */
 }
 
 .name-of-stat {
@@ -220,59 +236,40 @@ a:hover {
     color: var(--dark_color);
 }
 
-#about-container > .content {
+.current-handle > a {
 
-    height: 56vh;
+    padding: 0px;
+    text-transform: none;
 }
 
-#projects-container > .content {
+.current-handle > a:hover {
 
-    /* height: 60vh; */
+    border-bottom: 1.601px solid var(--dark_color);
+    transform-origin: left;
+    transform: scale(1);
+    transition: all 0.05s linear;
 }
 
-.project-summary {
-
-    font-size: 1.4rem;
-    /* height: 100%; */
-    /* padding: 50px; */
-    /* width: 80%; */
-    color: var(--dark_color);
-    /* text-align: left; */
-}
-
-.profile-links {
-
-    text-align: center;
-    margin-top: 60px;
-}
-
-a >  img {
-
-    width: 50px;
-}
-
-hr.separator {
-
-    border: 0.5px solid var(--dark_color);
-}
+/*back to top button*/
 
 #backToTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: var(--dark_color); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--dark_color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
 }
   
 #backToTop:hover {
-    /* background-color: #555; */
+
     opacity: 0.69;
 }

@@ -1,4 +1,3 @@
-//Get the button:
 var mybutton = document.getElementById("backToTop");
 var buttonControl = document.body;
 
@@ -25,6 +24,9 @@ function topFunction() {
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+// to print codeforces stats with rank-specific colors
+
 function getCodeforcesData() {
 
 	function work(data) {
@@ -33,10 +35,7 @@ function getCodeforcesData() {
 		var cfRankMax = data.result[0].maxRank;
 
 		cfHandle.innerHTML = "<span class=\"name-of-stat\">Handle: </span><span class=\"current-handle\"><a href=\"https://codeforces.com/profile/naman1601\" target=\"_blank\" title=\"visit my codeforces profile\">" + data.result[0].handle + "</a></span>";
-		// cfHandle.innerText = "Handle: " + data.result[0].handle;
-		// cfCurrentRating.innerText = "Current Rating: " + data.result[0].rating + " (" + data.result[0].rank + ")";
 		cfCurrentRating.innerHTML = "<span class=\"name-of-stat\">Current Rating: </span><span class=\"current-stats\">" + data.result[0].rating + " (" + data.result[0].rank + ")" + "</span>";
-		// cfMaxRating.innerText = "Max Rating: " + data.result[0].maxRating + " (" + data.result[0].maxRank + ")";
 		cfMaxRating.innerHTML = "<span class=\"name-of-stat\">Max Rating: </span><span class=\"max-stats\">" + data.result[0].maxRating + " (" + data.result[0].maxRank + ")" + "</span>";
 
 		var handleClass = document.getElementsByClassName("current-handle")[0];
