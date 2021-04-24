@@ -1,3 +1,9 @@
+:root {
+
+    --dark_color: darkblue;
+    --light_color: rgb(198, 235, 235);
+}
+
 html {
 
     scroll-behavior: smooth;
@@ -12,7 +18,7 @@ html {
 
     display: flex;
     flex-flow: row wrap;
-    background-color: darkblue;
+    background-color: var(--dark_color);
     justify-content: center;
     top: 0;
     height: 13vh;
@@ -22,7 +28,7 @@ html {
 
 .flex-container > div {
 
-    background-color: darkblue;
+    background-color: var(--dark_color);
     /* width: 100px; */
     margin: 10px;
     text-align: center;
@@ -51,7 +57,8 @@ a {
 a:hover {
     /* background-color: red; */
     /* color: rgb(59, 201, 201); */
-    color: rgb(198, 235, 235);
+    /* color: rgb(198, 235, 235); */
+    color: var(--light_color);
 }
 
 .current-handle > a{
@@ -63,7 +70,7 @@ a:hover {
 
 .current-handle > a:hover {
 
-    border-bottom: 1.601px solid darkblue;
+    border-bottom: 1.601px solid var(--dark_color);
     transform-origin: left;
     transform: scale(1);
     transition: all 0.05s linear;
@@ -71,14 +78,14 @@ a:hover {
 
 .project-link > a{
 
-    color: darkblue;
+    color: var(--dark_color);
     padding: 0px;
     text-transform: none;
 }
 
 .project-link > a:hover {
 
-    border-bottom: 1.601px solid darkblue;
+    border-bottom: 1.601px solid var(--dark_color);
     transform-origin: left;
     transform: scale(1);
     transition: all 0.05s linear;
@@ -155,10 +162,10 @@ a:hover {
 .heading {
 
     font-size: 2.8rem;
-    color: darkblue;
+    color: var(--dark_color);
     text-align: left;
     width: 90%;
-    border-bottom: 5px solid darkblue;
+    border-bottom: 5px solid var(--dark_color);
 }
 
 .tile {
@@ -178,25 +185,25 @@ a:hover {
 #skills {
 
     height: 100vh;
-    background-color: rgb(198, 235, 235);
+    background-color: var(--light_color);
 }
 
 #about {
 
     height: 100vh;
-    background-color: rgb(198, 235, 235);
+    background-color: var(--light_color);
 }
 
 #projects {
 
     height: 100vh;
-    background-color: rgb(198, 235, 235);
+    background-color: var(--light_color);
 }
 
 #cf {
 
     height: 100vh;
-    background-color: rgb(198, 235, 235);
+    background-color: var(--light_color);
 }
 
 .content {
@@ -204,13 +211,13 @@ a:hover {
     font-size: 1.4rem;
     /* height: 100vh; */
     width: 80%;
-    color: darkblue;
+    color: var(--dark_color);
     /* text-align: center; */
 }
 
 .name-of-stat {
 
-    color: darkblue;
+    color: var(--dark_color);
 }
 
 #about-container > .content {
@@ -229,13 +236,24 @@ a:hover {
     /* height: 100%; */
     /* padding: 50px; */
     /* width: 80%; */
-    color: darkblue;
+    color: var(--dark_color);
     /* text-align: left; */
+}
+
+.profile-links {
+
+    text-align: center;
+    margin-top: 60px;
+}
+
+a >  img {
+
+    width: 50px;
 }
 
 hr.separator {
 
-    border: 0.5px solid darkblue;
+    border: 0.5px solid var(--dark_color);
 }
 
 #backToTop {
@@ -246,7 +264,7 @@ hr.separator {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: darkblue; /* Set a background color */
+    background-color: var(--dark_color); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
